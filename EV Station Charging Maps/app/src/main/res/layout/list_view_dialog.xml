@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/NameOfStation"
+        android:layout_width="match_parent"
+        android:layout_height="29dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="TextView"
+        android:textColor="#060606"
+        app:layout_constraintBottom_toTopOf="@+id/Address"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Address"
+        android:layout_width="match_parent"
+        android:layout_height="31dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:text="Not Available"
+        android:textColor="#060606"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NameOfStation" />
+
+    <TextView
+        android:id="@+id/Operational"
+        android:layout_width="180dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginBottom="30dp"
+        android:text="@string/price"
+        android:textColor="#060606"
+        app:layout_constraintBottom_toTopOf="@+id/Website"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Address"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/Website"
+        android:layout_width="180dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="40dp"
+        android:autoText="true"
+        android:text="Not Available"
+        android:textColor="#060606"
+        app:layout_constraintBottom_toTopOf="@+id/buttonDismiss"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/MoreInfoButton"
+        android:layout_width="205dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="1dp"
+        android:background="@color/colorPrimary"
+        android:text="More Info"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonDismiss" />
+
+    <Button
+        android:id="@+id/buttonDismiss"
+        android:layout_width="205dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="1dp"
+        android:background="#6D6D6D"
+        android:text="Dismiss"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/MoreInfoButton"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="140dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/MoreInfoButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.878"
+        app:srcCompat="@android:color/darker_gray" />
+
+    <ImageView
+        android:id="@+id/website2"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="48dp"
+        android:background="#009B9A9A"
+        app:layout_constraintBottom_toTopOf="@+id/MoreInfoButton"
+        app:layout_constraintEnd_toStartOf="@+id/Website" />
+
+    <ImageView
+        android:id="@+id/price2"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="33dp"
+        app:layout_constraintBottom_toTopOf="@+id/Website"
+        app:layout_constraintEnd_toStartOf="@+id/Operational" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+<!--
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/price"
+        android:textColor="#060606"
+        app:layout_constraintStart_toEndOf="@+id/Price2"
+        app:layout_constraintTop_toBottomOf="@+id/Address" />
+
+    <TextView
+        android:id="@+id/NameOfStation"
+        android:layout_width="393dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="TextView"
+        android:textColor="#060606"
+        app:layout_constraintBottom_toTopOf="@+id/Address"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Address"
+        android:layout_width="394dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Not Available"
+        android:textColor="#060606"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NameOfStation" />
+
+    <TextView
+        android:id="@+id/IsOpen"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="15dp"
+        android:text="Not Available"
+        android:textColor="#060606"
+        app:layout_constraintStart_toEndOf="@+id/photo"
+        app:layout_constraintTop_toBottomOf="@+id/Website" />
+
+    <TextView
+        android:id="@+id/Website"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="22dp"
+        android:text="Not Available"
+        android:textColor="#060606"
+        app:layout_constraintStart_toEndOf="@+id/website2"
+        app:layout_constraintTop_toBottomOf="@+id/price" />
+
+    <Button
+        android:id="@+id/MoreInfoButton"
+        android:layout_width="205dp"
+        android:layout_height="46dp"
+        android:background="#6180F0"
+        android:text="More Info"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonDismiss" />
+
+    <Button
+        android:id="@+id/buttonDismiss"
+        android:layout_width="205dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="1dp"
+        android:background="#CCCCF1"
+        android:text="Dismiss"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/MoreInfoButton"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="140dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Address"
+        app:srcCompat="@android:color/darker_gray" />
+
+    <ImageView
+        android:id="@+id/Price2"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="23dp"
+        app:layout_constraintStart_toEndOf="@+id/photo"
+        app:layout_constraintTop_toBottomOf="@+id/Address"
+        app:srcCompat="@drawable/price" />
+
+    <ImageView
+        android:id="@+id/website2"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="22dp"
+        app:layout_constraintStart_toEndOf="@+id/photo"
+        app:layout_constraintTop_toBottomOf="@+id/Price2"
+        app:srcCompat="@drawable/website" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+-->

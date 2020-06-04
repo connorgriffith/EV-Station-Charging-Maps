@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">My Application2</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_main">Main</string>
+    <string name="selectVehicle">Select Your Vehicle:</string>
+    <string name="Tesla">Tesla Model 3</string>
+    <string name="BMW">BMW I3s</string>
+    <string name="Audi">Audi A3 e-tron</string>
+    <string name="toolbarLocation">Enter a Zip Code</string>
+    <string name="Title">EV-Maps</string>
+    <string name="ProceedToMaps">Proceed To Maps</string>
+    <string name="Amenities">Amenities: covered charging, mini market, air/water</string>
+    <string name="ChargeVehicle">Time to charge your vehicle: </string>
+    <string name="price">0.12/kWh</string>
+    <string name="email">charging@hardcoded.com</string>
+</resources>

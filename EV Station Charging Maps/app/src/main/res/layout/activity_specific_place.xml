@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<!--
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="412dp"
+        android:layout_height="733dp"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintHorizontal_bias="1.0"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toTopOf="parent"
+        tools:context=".MapsActivity" />
+        -->
+
+
+    <fragment
+        android:id="@+id/streetviewpanorama"
+        android:name="com.google.android.gms.maps.StreetViewPanoramaFragment"
+        android:layout_width="411dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="72dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="20dp"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#060606"
+        app:layout_constraintBottom_toTopOf="@+id/streetviewpanorama"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/IsOpen"
+        android:layout_width="178dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        android:textColor="#060606"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Email" />
+
+    <TextView
+        android:id="@+id/Website"
+        android:layout_width="354dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:text="TextView"
+        android:textColor="#060606"
+        app:layout_constraintStart_toEndOf="@+id/WebsiteSymbol"
+        app:layout_constraintTop_toBottomOf="@+id/Price" />
+
+    <TextView
+        android:id="@+id/Amenities"
+        android:layout_width="336dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/Amenities"
+        android:textColor="#060606"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IsOpen" />
+
+    <TextView
+        android:id="@+id/TimeToCharge"
+        android:layout_width="191dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="15dp"
+        android:textColor="#060606"
+        android:text="@string/ChargeVehicle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Amenities" />
+
+    <TextView
+        android:id="@+id/TimeOfCharge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="15dp"
+        android:text="TextView"
+        android:textColor="#060606"
+        app:layout_constraintStart_toEndOf="@+id/TimeToCharge"
+        app:layout_constraintTop_toBottomOf="@+id/Amenities" />
+
+    <ImageView
+        android:id="@+id/WebsiteSymbol"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PriceSymbol"
+        app:srcCompat="@drawable/website" />
+
+    <ImageView
+        android:id="@+id/PriceSymbol"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="41dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/streetviewpanorama"
+        app:srcCompat="@drawable/price" />
+
+    <TextView
+        android:id="@+id/Price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="45dp"
+        android:text="@string/price"
+        android:textColor="#060606"
+        app:layout_constraintStart_toEndOf="@+id/PriceSymbol"
+        app:layout_constraintTop_toBottomOf="@+id/streetviewpanorama" />
+
+    <TextView
+        android:id="@+id/Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="14dp"
+        android:text="@string/email"
+        android:textColor="#060606"
+        app:layout_constraintStart_toEndOf="@+id/EmailSymbol"
+        app:layout_constraintTop_toBottomOf="@+id/Website" />
+
+    <ImageView
+        android:id="@+id/EmailSymbol"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WebsiteSymbol"
+        app:srcCompat="@drawable/email" />
+
+    <TextView
+        android:id="@+id/Operational"
+        android:layout_width="186dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#060606"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/IsOpen"
+        app:layout_constraintTop_toBottomOf="@+id/Email" />
+
+    <TextView
+        android:id="@+id/Distance"
+        android:layout_width="254dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#060606"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TimeToCharge" />
+
+
+    <!--
+    tools:layout_conversion_absoluteHeight="0dp"
+    tools:layout_conversion_absoluteWidth="0dp"
+        -->
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
